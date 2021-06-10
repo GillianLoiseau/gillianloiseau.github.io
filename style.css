@@ -1,7 +1,19 @@
 h1 {
 	color: green; 
-	font-family: arial;
+	font-family: 'Open Sans', sans-serif;
 }
+
+h2 {
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+p{
+text-align: justify;
+margin-left: 420px;
+margin-right: 420px;
+font-family: 'Pontano Sans', sans-serif;
+}
+
 
 .span-pink { 
 	color: pink; 
@@ -9,26 +21,44 @@ h1 {
 
 .span-bold { 
 	font-weight;
-	background: green;
 }
 
 .frame{
 	border: 10px solid black;
 	margin: 100px;
 	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px;
 }
 
 .frame-bars{
 	border: 5px solid green;
 	margin: 50px;
 	padding: 30px;
+	border-radius: 100px;
+}
+
+.frame2{
+	border: 10px solid black;
+	border-radius: 100px;
+	padding: 30px;
+	width: 200px;
+}
+
+.imagerond {
+	width : 150px; 
+	height : 150px;
+  	border: none;
+	-moz-border-radius : 75px;
+	-webkit-border-radius : 75px;
+	border-radius : 75px;
 }
 
 body, h3, ol {
-	background-color: #fff0e6;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23b4d6ab' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+	background-color: #fdf3e7;
 	text-align: center;
 }
+
 
 /*
 h3, ol {
@@ -39,8 +69,8 @@ h3, ol {
 /*DRAPEAU*/
 .drapeau {
 	background: grey;
-	height: 300px;
-	width: 600px;
+	height: 150px;
+	width: 300px;
 	/*positionner les enfants les uns à côté des autres*/
 	display: flex;
 	/*positionner horizontalement les enfants*/
@@ -51,28 +81,31 @@ h3, ol {
 
 .blue{
 	background: blue;
-	height: 300px;
+	height: 150px;
 	width: 200px;
 }
 
 .white{
 	background: white;
-	height: 300px;
+	height: 150px;
 	width: 200px;
 }
 
 .red{
 	background: red;
-	height: 300px;
+	height: 150px;
 	width: 200px;
 }
 
 /*NAVBAR*/
-.navbar {
+.my-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
 }
 
@@ -83,18 +116,27 @@ h3, ol {
 
 .item {
   margin: 10px 30px;
-  color: green;
+  color: white;
 }
 
 .item:hover {
   color: pink;
 }
 
-
-.carte {
+/*TITRE CARTE*/
+.titrecarte {
 	display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: green;
+  	justify-content: space-between;
+  	text-align: center;
+  	background: white;
 }
 
+
+.encadre {
+	display: flex;
+	justify-content: center;
+}
+
+.fondcadre {
+	background-color: black;
+}
